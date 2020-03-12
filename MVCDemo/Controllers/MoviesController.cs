@@ -82,7 +82,7 @@ namespace MVCDemo.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(movieDB).State = EntityState.Modified;
+                db.Entry(movieDB).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
